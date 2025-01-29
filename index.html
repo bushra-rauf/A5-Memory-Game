@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./styles/memory.css">
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/memory.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Memory Game</h1>
+        <div class="player-info">
+            <div class="current-player">Current Player: Player 1</div>
+            <div>Player 1 Score: <span class="player1-score">0</span></div>
+            <div>Player 2 Score: <span class="player2-score">0</span></div>
+            <div>Games Played: <span class="games-played">0</span></div>
+        </div>
+    </header>
+
+    <!-- Toggle button -->
+    <button id="toggle-btn">Game-Instruction</button>
+
+    <!-- Start Section (hidden initially) -->
+    <div id="start-section" style="display:none;">
+        <h2>Welcome to the Memory Game!</h2>
+        <p>Try to match the tiles within 12 turns!</p>
+    </div>
+        <div id="message"></div>
+    <div class="guesses-text">Guesses: <b>0 / 12</b></div>
+    <!-- Game Area -->
+    <div id="game-board"></div>
+
+    <!-- Replay button (hidden until game ends) -->
+    <button id="replay-btn" style="display:none;">Replay</button>
+
+    <!-- Lose Image (hidden initially) -->
+    <img id="lose-image" src="./image/lost-game.JPG" alt="You lost!" style="display:none;">
+    <img id="win-image" src="./image/win-game.jpg" alt="You Win!" style="display:none">
+
+
+
+    <button id="start-btn">Start Game</button>
+
+    
+</body>
+</html>
