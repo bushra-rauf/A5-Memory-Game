@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let turnsLeft = 14;
+    let turnsLeft = 12;
     let wins = [0, 0];
     let gamesPlayed = 0;
     let currentPlayer = 0;
@@ -22,7 +22,7 @@ $(document).ready(function () {
     function startGame() {
         $("#toggle-btn").hide()
         $('#start-section').hide()
-        turnsLeft = 14;
+        turnsLeft = 12;
         $('#message').text('');
         $('#game-board').empty(); // Clear previous game tiles
         selectedTiles = [];
@@ -92,7 +92,7 @@ $(document).ready(function () {
     }
 
     function updateGuesses() {
-        $('.guesses-text').text(`Guesses + ${14 - turnsLeft} / 14`);
+        $('.guesses-text').text(`Guesses + ${12 - turnsLeft} / 12`);
     }
 
     function updateScoreboard() {
